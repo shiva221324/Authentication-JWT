@@ -106,7 +106,7 @@ router.post("/forgot", async (req, res) => {
       service: "gmail",
       auth: {
         user: "luckysiva516@gmail.com",
-        pass: "ggpl jgsw dmji awhn",
+        pass: process.env.PASS_MAIL,
       },
     });
     let mailoptions = {
